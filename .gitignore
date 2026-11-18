@@ -1,0 +1,18 @@
+# Entorno
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Datos generados (se recrean con los scripts)
+data/raw/*.csv
+data/processed/*.csv
+data/*.db
+
+# Power BI: el .pbix puede pesar mucho; subir solo capturas
+*.pbix
+
+# Sistema
+.DS_Store
+Thumbs.db
