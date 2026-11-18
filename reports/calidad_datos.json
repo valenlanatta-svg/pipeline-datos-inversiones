@@ -1,0 +1,49 @@
+{
+  "ejecutado": "2026-11-18T19:18:44",
+  "fuente_tipo_cambio": "api_bcra",
+  "filas_cargadas": {
+    "dim_fecha": 362,
+    "dim_asesor": 12,
+    "dim_cliente": 1500,
+    "dim_instrumento": 22,
+    "fact_tipo_cambio": 362,
+    "fact_cotizaciones": 5720,
+    "fact_operaciones": 44901,
+    "fact_movimientos": 9053
+  },
+  "calidad_de_datos": {
+    "clientes": {
+      "filas_entrada": 1500,
+      "duplicados_eliminados": 0,
+      "filas_salida": 1500
+    },
+    "operaciones": {
+      "filas_entrada": 45540,
+      "duplicados_eliminados": 540,
+      "fechas_formato_alternativo_corregidas": 600,
+      "fechas_invalidas_descartadas": 0,
+      "tickers_normalizados": 396,
+      "clientes_inexistentes_descartados": 59,
+      "tickers_inexistentes_descartados": 0,
+      "cantidad_o_precio_invalido_descartados": 40,
+      "montos_recalculados": 150,
+      "tipo_operacion_invalido_descartados": 0,
+      "filas_salida": 44901
+    },
+    "movimientos": {
+      "filas_entrada": 9144,
+      "duplicados_eliminados": 91,
+      "fechas_invalidas_descartadas": 0,
+      "tipos_normalizados": 79,
+      "tipo_movimiento_invalido_descartados": 0,
+      "clientes_inexistentes_descartados": 0,
+      "montos_invalidos_descartados": 0,
+      "filas_salida": 9053
+    }
+  },
+  "alertas_generadas": {
+    "Depositos fuera de perfil": 19,
+    "Fraccionamiento de depositos en efectivo": 8,
+    "Ida y vuelta de fondos": 7
+  }
+}
